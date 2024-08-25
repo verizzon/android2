@@ -1,0 +1,32 @@
+.header {
+  background-color: #ffffff; /* белый фон */
+  color: #005500; /* зеленый текст */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #005500; /* зеленый текст */
+  text-decoration: none;
+}
+
+.header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.header nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.header nav ul li a {
+  color: #005500; /* зеленый текст */
+  text-decoration: none;
+  font-size: 18px;
+}

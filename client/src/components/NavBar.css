@@ -1,0 +1,66 @@
+.navbar {
+  background-color: #004a99; /* Темно-синий цвет фона */
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-items {
+  display: flex; /* Горизонтальное распределение элементов */
+}
+
+.menu-button, .logout-button {
+  background-color: #0066cc; /* Ярко-синий */
+  border: none; /* Убираем границу */
+  color: white; /* Текст белого цвета */
+  padding: 10px 20px; /* Внутренние поля */
+  margin: 0 10px; /* Отступы между кнопками */
+  border-radius: 5px; /* Скругление углов */
+  cursor: pointer; /* Курсор в виде указателя */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Плавность перехода */
+  font-size: 16px; /* Размер шрифта */
+  text-align: center;
+  min-width: 120px; /* Минимальная ширина кнопки */
+}
+
+.menu-button:hover, .logout-button:hover, .menu-button:focus, .logout-button:focus {
+  background-color: #0051a3; /* Темнее при наведении и фокусе */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Тень для акцента */
+}
+
+.menu-button:active, .logout-button:active {
+  background-color: #003366; /* Еще темнее при активации */
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15); /* Меньше тени при нажатии */
+}
+
+.logout-button {
+  background-color: #cc0000; /* Красный цвет для кнопки выхода */
+}
+
+.logout-button:hover, .logout-button:focus {
+  background-color: #990000; /* Темнее при наведении и фокусе */
+}
+
+.logout-button:active {
+  background-color: #660000; /* Еще темнее при активации */
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column; /* Элементы в колонку на малых экранах */
+      align-items: center; /* Центрирование элементов */
+  }
+
+  .menu-items {
+      flex-direction: column; /* Все кнопки в колонку */
+  }
+
+  .menu-button, .logout-button {
+      width: 100%; /* Кнопки на всю ширину */
+      margin: 5px 0; /* Отступы вокруг кнопок */
+  }
+}

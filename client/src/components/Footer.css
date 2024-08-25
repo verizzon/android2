@@ -1,0 +1,14 @@
+.footer {
+  background-color: #005500; /* зеленый фон */
+  color: #ffffff; /* белый текст */
+  text-align: center;
+  padding: 15px 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 5px 0;
+}

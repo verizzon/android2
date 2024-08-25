@@ -1,0 +1,67 @@
+/* HomePage.css */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    400px
+  ); /* Уменьшите значение fr или укажите фиксированную ширину */
+  grid-gap: 20px; /* Отступы между элементами */
+}
+
+.product-item {
+  background: white; /* Фон каждого продукта */
+  border: 1px solid #ccc; /* Граница */
+  border-radius: 10px; /* Скругление углов */
+  overflow: hidden; /* Обрезка контента по границам */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень */
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.product-item img {
+  width: 200px;
+  height: 200px; /* Ширина изображения равна ширине блока */
+  display: block;
+  object-fit: cover; /* Обрезка изображения по краям, чтобы заполнить контейнер */
+  border-radius: 10px; /* Убирает лишние отступы под изображением */
+}
+
+.product-item h3 {
+  padding: 10px;
+}
+
+.product-item p {
+  padding: 0 10px 10px;
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки на меньших экранах */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr; /* 1 колонка на очень маленьких экранах */
+  }
+}
+.search-bar {
+  width: 100%; /* Занимает всю ширину контейнера */
+  padding: 10px 15px; /* Подушки для удобства ввода */
+  font-size: 16px; /* Читабельный размер шрифта */
+  border: 1px solid #ccc; /* Субтильная граница */
+  border-radius: 20px; /* Скругленные углы */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Небольшая тень для глубины */
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+.search-bar:focus {
+  outline: none; /* Убирает стандартный фокус браузера */
+  border-color: #6658d3; /* Смена цвета границы при фокусе */
+  box-shadow: 0 0 8px rgba(102, 88, 211, 0.5); /* Усиление тени при фокусе */
+}
+.search-bar {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
